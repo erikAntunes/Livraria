@@ -1,13 +1,13 @@
-public class Livros {
+public class Livro {
 
 
     private String codigo;
     private String titulo;
     private String autor;
-    private int anoDeLancamento;
+    private int anoLancamento;
     private String codigoISBN;
-    private Integer quantidadeEmEstoque;
-    private int preco;
+    private int quantidadeEmEstoque;
+    private float preco;
 
     public String getCodigo() {
         return codigo;
@@ -33,12 +33,12 @@ public class Livros {
         this.autor = autor;
     }
 
-    public int getAnoDeLancamento() {
-        return anoDeLancamento;
+    public int getAnoLancamento() {
+        return anoLancamento;
     }
 
-    public void setAnoDeLancamento(int anoDeLancamento) {
-        this.anoDeLancamento = anoDeLancamento;
+    public void setAnoLancamento(int anoLancamento) {
+        this.anoLancamento = anoLancamento;
     }
 
     public String getCodigoISBN() {
@@ -49,19 +49,19 @@ public class Livros {
         this.codigoISBN = codigoISBN;
     }
 
-    public Integer getQuantidadeEmEstoque() {
+    public int getQuantidadeEmEstoque() {
         return quantidadeEmEstoque;
     }
 
-    public void setQuantidadeEmEstoque(Integer quantidadeEmEstoque) {
+    public void setQuantidadeEmEstoque(int quantidadeEmEstoque) {
         this.quantidadeEmEstoque = quantidadeEmEstoque;
     }
 
-    public int getPreco() {
+    public float getPreco() {
         return preco;
     }
 
-    public void setPreco(int preco) {
+    public void setPreco(float preco) {
         this.preco = preco;
     }
 }
