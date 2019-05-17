@@ -3,9 +3,10 @@ import java.util.List;
 
 public class Catalogo {
 
-    public List<Livro> estoque;
+    private List<Livro> estoque;
 
     public Catalogo(){
+
         estoque = new ArrayList<>();
         Livro l1 = new Livro();
         l1.setTitulo("A Batalha do Apocalipse");
@@ -48,15 +49,20 @@ public class Catalogo {
         estoque.add(l4);
     }
 
-    public void cadastrarLivro(Livro livro){
-        estoque.add(livro);
+    public void cadastrarLivro(Livro novoLivro){
+        estoque.add(novoLivro);
     }
 
-    public void consultarLivroPorCodigo(String codigo){}
+    public Livro consultarLivroPorCodigo(String codigo){
+
+        for (Livro livro :estoque)
+            codigo.equals (livro.getCodigo());
+            System.out.println();
+
+        return null;
+    }
 
     public void efetuarVendaPorCodigo (String codigo){}
-
-
 
 
 }

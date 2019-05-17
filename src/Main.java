@@ -7,7 +7,7 @@ public class Main {
 
 
 
-        System.out.println(catalogoDeLivros.estoque.get(0).getAutor());
+        System.out.println(catalogoDeLivros.consultarLivroPorCodigo("0001"));
 
     }
 }
