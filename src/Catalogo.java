@@ -55,10 +55,14 @@ public class Catalogo {
 
     public Livro consultarLivroPorCodigo(String codigo){
 
-        for (Livro livro :estoque)
-            codigo.equals (livro.getCodigo());
-            System.out.println();
+        // percorra todos os elementos da lista estoque
+        for (Livro livro : estoque) {
 
+            // se o codigo passado for igual ao codigo do livro
+            if (codigo.equals(livro.getCodigo())) {
+                return livro; // retorna o Livro
+            }
+        }
         return null;
     }
 
