@@ -1,3 +1,4 @@
+import javax.swing.text.LabelView;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,8 +67,15 @@ public class Catalogo {
         return null;
     }
 
-    public void efetuarVendaPorCodigo (String codigo){}
+    public void efetuarVendaPorCodigo (String codigo){
+        for (Livro livro :estoque){
+            if (codigo.equals(livro.getCodigo())){
+                livro.setQuantidadeEmEstoque(livro.getQuantidadeEmEstoque()-1);
+                System.out.println(livro.getTitulo()+" Vendido com Sucesso, "+"Quantidade total em estoque: "+livro.getQuantidadeEmEstoque());
+            }
+        }
 
+        }
+    }
 
-}
 
